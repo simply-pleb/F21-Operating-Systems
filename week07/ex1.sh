@@ -1,0 +1,1 @@
+size ex1.out
