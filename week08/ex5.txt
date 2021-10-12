@@ -1,0 +1,2 @@
+Physical addresses are the actual addresses in RAM. Virtual memory is an abstraction on top of physical addresses created to deal with programs that are larger than the actual RAM. 
+Each program has its own virtual addresses space. Programs do not have access to the physical memory.
