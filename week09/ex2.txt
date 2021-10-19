@@ -1,0 +1,36 @@
+Given a 2 page frames, 4 virtual pages, and 8 accesses, several outcomes are possible. 
+
+Starting with the one big hit rate
+2 8
+1 1
+2 1
+3 2
+4 2
+5 3
+6 3
+7 4
+8 4
+or
+2 8
+1 1
+2 2
+3 1
+4 2
+5 3
+6 4
+7 3
+8 4
+These sequence have 4 misses and 4 hits. The hit/miss ratio is 1.
+
+On the other hand, if we have 
+2 8
+1 1
+2 2
+3 3
+4 4
+5 1
+6 2
+7 3
+8 4
+This sequence never gets a hit because pages get evicted before they are accesses for the second time.
+The hit/miss ration is 0.
