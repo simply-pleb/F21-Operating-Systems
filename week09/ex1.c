@@ -46,14 +46,14 @@ void incr_clock_cnt(struct virtual_page *vp, int cnt){
         for(int i=1; i<=M; i++){
             // printf("CL: %d{%d} -> %d\n", i, vp[i].loaded, vp[i].age_counter);
             if(vp[i].loaded){
-                if(vp[i].age_counter == 0){
-                    vp[i].loaded = 0;
-                    global_cnt_used_frames --;
+                // if(vp[i].age_counter == 0){
+                    // vp[i].loaded = 0;
+                    // global_cnt_used_frames --;
                     // printf("CL: out %d\n", i);
-                }
-                else{
+                // }
+                // else{
                     vp[i].age_counter >>= 1;
-                }
+                // }
             }
         }
     }
