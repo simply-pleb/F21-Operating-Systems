@@ -1,0 +1,4 @@
+sudo cat /proc/ioports > ex1.txt
+echo "dma1 is an io port of DMA(Direct Memory Access). It gives direct memory access to the main memory to the hardware devices independently from the CPU. Additionally, it has registers that can be read and written by the CPU." >> ex1.txt
+echo "pic1 is an io port of PIC(Peripheral Interface Controller). It is a standalone microcontroller that has its own memory, data bus and microprocessor for handling I/O. It is used to handle peripheral devices and their I/O operations in order to enhance performance." >> ex1.txt
+echo "I am not sure about this one, but timer1 could be an io port of a timer1 register. For example, 8051 microcontrollers has two timers/counters registers named timer0 and timer1. Each of them is 16-bit wide and can act as either a counter or a timer." >> ex1.txt
