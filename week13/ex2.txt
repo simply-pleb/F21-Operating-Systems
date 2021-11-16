@@ -1,0 +1,24 @@
+Recovery
+After a deadlock was detected, the system needs to be recovered. 
+There are three ways of recovery, but they are not very efficient 
+in dealing with deadlocks. 
+Those are recovery by preemption, rollback and killing processes.
+
+Preemption is used when a resources can be taken temporarily from a process. 
+
+Rollback implements checkpoints for processes. Checkpoints are periodically 
+written to a file storing the memory image and the resources state.
+
+Killing a processes implies that processes causing a deadlock will be killed
+
+Avoidance
+Deadlock avoidance is a method when the system decides whether granting 
+resources is safe or not, and grants them only if it decides that it is safe.
+Unfortunately, deadlock avoidance is not not always possible to be implemented,
+because it requires information about future requests. 
+
+Prevention
+As stated in the name, this method strives to prevent the occurrence of a deadlock,
+by dealing with the conditions under which they happen. So far, this is the most 
+efficient method among the three stated.  
+
